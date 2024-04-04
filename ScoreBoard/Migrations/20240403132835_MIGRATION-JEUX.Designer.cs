@@ -11,7 +11,7 @@ using ScoreBoard.Models;
 
 namespace ScoreBoard.Migrations
 {
-    [DbContext(typeof(CatalogueJeuxDbContext))]
+    [DbContext(typeof(CatalogueJoueurDbContext))]
     [Migration("20240403132835_MIGRATION-JEUX")]
     partial class MIGRATIONJEUX
     {

@@ -2,9 +2,9 @@
 
 namespace ScoreBoard.Models
 {
-    public class CatalogueJeuxDbContext : DbContext
+    public class CatalogueJoueurDbContext : DbContext
     {
-        public CatalogueJeuxDbContext(DbContextOptions<CatalogueJeuxDbContext> options) : base(options)
+        public CatalogueJoueurDbContext(DbContextOptions<CatalogueJoueurDbContext> options) : base(options)
         {
 
         }

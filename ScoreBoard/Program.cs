@@ -5,7 +5,10 @@ using ScoreBoard.ViewModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<CatalogueJeuxDbContext>(options =>
+builder.Services.AddScoped<IJeuRepository, BDJeuRepository>();
+builder.Services.AddScoped<IJoueurRepository, BDJoueurRepository>();
+
+builder.Services.AddDbContext<CatalogueJoueurDbContext>(options =>
   {
       options.UseSqlServer(builder.Configuration["ConnectionStrings:CatalogueJeuxDbContextConnection"]);
   });

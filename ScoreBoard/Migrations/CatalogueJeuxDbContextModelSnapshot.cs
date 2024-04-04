@@ -10,7 +10,7 @@ using ScoreBoard.Models;
 
 namespace ScoreBoard.Migrations
 {
-    [DbContext(typeof(CatalogueJeuxDbContext))]
+    [DbContext(typeof(CatalogueJoueurDbContext))]
     partial class CatalogueJeuxDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
